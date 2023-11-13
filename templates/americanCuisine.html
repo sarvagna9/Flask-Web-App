@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cuisines</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/american.css') }}">
+  </head>
+  <style>
+    h2 {text-align: center;}
+  </style>
+  <body>
+    <h2>American Food!</h2>
+    <div>{{results}}</div>
+    <img src = {{image}} alt="">
+    <li><a href="{{ url_for('home') }}">Back to home page</a></li>
+  </body>
+</html>
