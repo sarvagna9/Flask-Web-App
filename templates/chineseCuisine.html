@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cuisines</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chinese.css') }}">
+  </head>
+  <style>
+    h2 {text-align: center;}
+  </style>
+  <body>
+    <h2>Chinese Food!</h2>
+  <body>
+    <div>{{results}}</div>
+    <img src = {{image}} alt="">
+    <li><a href="{{ url_for('home') }}">Back to home page</a></li>
+  </body>
+</html>
