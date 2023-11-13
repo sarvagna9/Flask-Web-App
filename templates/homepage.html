@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Wecome!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <style>
+    h2 {text-align: center;}
+  </style>
+    
+  <body>
+    <h2 style="color:blue;">Variety of Cuisines!</h2>
+    <ul class="menu">
+            <h2>Welcome to the website that gives you information about different cuisines!</h2>
+            <h2>We have Indian, American, Italian, Mexican, and Chinese cuisines, so be sure to check out all the links below. </h2>
+            <h2>If there are other cuisines you'd like to learn about, please go to the "Your Choice!" link and enter a cuisine of your choice.</h2>
+            <h2>Enjoy!</h2>
+
+            <li><a href="{{ url_for('indianCuisine') }}">Indian Cuisine</a></li>
+            <li><a href="{{ url_for('americanCuisine') }}">American Cuisine</a></li>
+            <li><a href="{{ url_for('italianCuisine') }}">Italian Cuisine</a></li>
+            <li><a href="{{ url_for('mexicanCuisine') }}">Mexican Cuisine</a></li>
+            <li><a href="{{ url_for('chineseCuisine') }}">Chinese Cuisine</a></li>
+            <li><a href="{{ url_for('userChoice') }}">Your Choice!"</a></li>
+            
+            
+    </ul>
+  </body>
+</html>
