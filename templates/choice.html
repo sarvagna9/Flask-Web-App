@@ -2,16 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Cuisines</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/choice.css') }}">
+    <title>Your choice</title>
   </head>
   <style>
     h2 {text-align: center;}
   </style>
   <body>
-    <h2>Food!</h2>
-    <div>{{results}}</div>
-    <img src = {{image}} alt="">
+    <h2>Your choice food!</h2>
+    <form action="/input" method="post"> 
+      <input
+        id="Cuisine"
+        name="Cuisine" 
+
+      >
+      <input type="submit" value="Submit">
+    </form>
     <li><a href="{{ url_for('home') }}">Back to home page</a></li>
   </body>
 </html>
